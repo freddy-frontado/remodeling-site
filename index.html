@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>My New Home</title>
+</head>
+
+<body>
+
+	<!-- Sección: Header -->
+	<header class="bg-banner text-light mb-5">
+		<div class="container h-100">
+			<div class="row justify-content-between justify-content-sm-around align-items-center fixed-top" id="menu">
+				<div class="col col-auto">
+					<a href="#"><img class="logo-img" src="img/logo-removebg.png" alt="logo"></a>
+				</div>
+				<div class="col col-auto d-block d-md-none order-3 mx-5">
+					<span class="text-light bi bi-list" id="navIcon">
+					</span>
+				</div>
+				<div class="col col-auto navMenu visibility" id="burgerMenu">
+					<ul class="nav py-3">
+						<li>
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#about-us">Nosotros</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#service">Servicios</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-auto d-none d-sm-block">
+					<a class="nav-link text-light" href="#"><i class="bi bi-headset text-warning"></i> 555-555-55</a>
+				</div>
+			</div>
+			<div class="row h-100">
+				<div class="col h-100 d-flex align-items-center">
+					<div class="text-center text-md-left">
+						<h1 class="display-4">Remodelación de espacios</h1>
+						<p class="lead mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat totam
+							mollitia deserunt ad quidem vel, blanditiis sint beatae aperiam sed dignissimos</p>
+						<a type="button" class="btn btn-warning text-uppercase text-spacing" href="#"
+							data-toggle="modal" data-target="#project-modal">Quiero un proyecto</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sección: ¿Por qué elegirnos? -->
+	<section class="container mb-3" id="about-us">
+		<div class="row">
+			<div class="col">
+				<h4 class="display-title text-center">¿Por qué elegirnos?</h4>
+			</div>
+		</div>
+		<div class="row mt-2 mt-md-3 align-items-center">
+			<div class="col-12 col-md-6">
+				<img class="img-fluid" src="img/why-us/why-us-1.png" alt="">
+			</div>
+			<div class="col-12 col-md-6 text-center text-md-left p-3">
+				<p class="text-primary mb-2">LOREM</p>
+				<h4>Profesionales de alto nivel</h4>
+				<p class="display-text-text">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Blanditiis
+					dolorum illum maxime maiores
+					deserunt tenetur, quos magnam architecto, dolore? Placeat!</p>
+			</div>
+		</div>
+		<div class="row mt-3 mt-md-5 align-items-center">
+			<div class="col-12 col-md-6 order-md-2">
+				<img class="img-fluid" src="img/why-us/why-us-2.png" alt="">
+			</div>
+			<div class="col-12 col-md-6 text-center text-md-left p-3">
+				<p class="text-primary mb-2">LOREM</p>
+				<h4>Diseño moderno y eficiente</h4>
+				<p class="display-text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quae
+					consectetur architecto commodi tempore voluptate quam</p>
+			</div>
+		</div>
+		<div class="row mt-3 mt-md-5 align-items-center">
+			<div class="col-12 col-md-6">
+				<img class="img-fluid" src="img/why-us/why-us-3.png" alt="">
+			</div>
+			<div class="col-12 col-md-6 text-center text-md-left p-3">
+				<p class="text-primary mb-2">LOREM</p>
+				<h4>Presupuesto acorde a tus posibilidades</h4>
+				<p class="display-text-text">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Blanditiis
+					dolorum illum maxime maiores deserunt tenetur</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección: Nuestros Trabajos  -->
+	<section class="container mb-5" id="service">
+		<div class="row">
+			<div class="col">
+				<h4 class="display-title text-center mb-3">Nuestros trabajos</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="my-4">
+					<ul class="nav nav-pills nav-fill">
+						<li class="nav-item">
+							<a class="nav-link active" name="living-room" data-toggle="tab" href="#living-room">Sala</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link render-image" name="kitchen" data-toggle="tab" href="#kitchen">Cocina</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link render-image" name="bedroom" data-toggle="tab"
+								href="#bedroom">Dormitorio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link render-image" name="bathroom" data-toggle="tab" href="#bathroom">Baño</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link render-image" name="garden" data-toggle="tab" href="#garden">Jardín</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div class="tab-content">
+						<div class="container tab-pane fade show active" id="living-room">
+						</div>
+						<div class="container tab-pane fade show" id="kitchen">
+						</div>
+						<div class="container tab-pane fade show" id="bedroom">
+						</div>
+						<div class="container tab-pane fade show" id="bathroom">
+						</div>
+						<div class="container tab-pane fade show" id="garden">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección: Destacados del mes -->
+	<section class="container bg-light rounded">
+		<div class="row">
+			<div class="col">
+				<h4 class="display-title text-center p-4">Destacados del mes</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-6 pb-lg-4">
+				<div class="carousel slide" id="myCarousel" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100 rounded" src="img/featured/offers-1.png" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 rounded" src="img/featured/offers-2.png" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 rounded" src="img/featured/offers-3.png" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 rounded" src="img/featured/offers-4.png" alt="">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hiden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hiden="true"></span>
+						<span class="sr-only">Siguiente</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6 h-100 d-flex align-items-center py-3">
+				<div class="py-2">
+					<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quidem quibusdam
+						dicta in deserunt dolore, earum sit veritatis molestias ipsum.</p>
+					<div class="row">
+						<div class="col">
+							<p><i class="bi bi-arrow-right-circle-fill text-danger"></i> Sit amet consectetur</p>
+							<p><i class="bi bi-arrow-right-circle-fill text-danger"></i> LQuasi eos consequatur</p>
+						</div>
+						<div class="col">
+							<p><i class="bi bi-arrow-right-circle-fill text-danger"></i> Omnis harum numquam</p>
+							<p><i class="bi bi-arrow-right-circle-fill text-danger"></i> Lorem, ipsum dolor.</p>
+						</div>
+					</div>
+					<div class="text-center text-lg-left">
+						<button class="btn btn-secondary text-uppercase text-align-center text-spacing mt-3"
+							data-toggle="modal" data-target="#project-modal">Cotizar proyecto</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección: Newsletter -->
+	<section class="main">
+		<div class="container">
+			<div class="row justify-content-around align-items-center mt-5">
+				<div class="col d-none d-md-block">
+					<img class="img-fluid mask-news-letter" src="img/newsletter-women.png" alt="">
+				</div>
+				<div class="col">
+					<div class="text-center text-md-left">
+						<h4 class="display-title my-3">¿Te gustan nuestras ideas?</h4>
+						<p class="display-title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, qui
+							sit amet cons!</p>
+					</div>
+					<div class="form-group d-flex justify-content-center justify-content-md-start">
+						<div class="input-group w-100">
+							<input class="form-control" type="text" placeholder="correo@correo.com">
+							<div class="input-group-append">
+								<button class="btn btn-primary bg-danger border-0"><i class="bi bi-send"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-group my-3">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="terms" name="terms">
+							<label for="terms" class="form-check-label display-text-letter">Acepto los <a
+									href="#">términos y condiciones</a></label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="send-comunications"
+								name="send-comunications">
+							<label for="send-comunications" class="form-check-label display-text-letter">Quiero que My
+								New
+								Home me envíe comunicaciones comerciales y promociones vía electrónica. Se pueden
+								consultar
+								<a href="#">aquí</a></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección: Preguntas frecuentes -->
+	<section class="container-fluid bg-light mt-5 pb-5">
+		<div class="row">
+			<div class="col">
+				<h4 class="display-title text-center pt-5 pb-2">Pregutas frecuentes</h4>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col col-md">
+			</div>
+			<div class="col-10 col-sm-10 col-md-8">
+				<div id="accordion">
+					<div>
+						<div class="bg-light pt-3 d-flex justify-content-between align-items-center" id="headingOne">
+							<h5 class="mb-0 py-3">
+								¿Lorem ipsum dolor sit amet consectetur?
+							</h5>
+							<a class="collapsed activated" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="false" aria-controls="collapseOne">
+							</a>
+						</div>
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="bg-light py-3 px-1">
+								Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Explicabo molestias dolorum
+								iusto commodi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
+								minima?
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div>
+						<div class="bg-light pt-3 d-flex justify-content-between align-items-center" id="headingTwo">
+							<h5 class="mb-0 py-3">
+								¿Lorem adipisicing elit. Amet, voluptatum!?
+							</h5>
+							<a class="collapsed activated" data-toggle="collapse" data-target="#collapseTwo"
+								aria-expanded="false" aria-controls="collapseTwo">
+							</a>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="bg-light py-3 px-1">
+								Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Explicabo molestias dolorum
+								iusto commodi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
+								minima?
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div>
+						<div class="bg-light pt-3 d-flex justify-content-between align-items-center" id="headingThree">
+							<h5 class="mb-0 py-3">
+								¿Explicabo molestias dolorum iusto commodi ab.?
+							</h5>
+							<a class="collapsed activated" data-toggle="collapse" data-target="#collapseThree"
+								aria-expanded="false" aria-controls="collapseThree">
+							</a>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordion">
+							<div class="bg-light py-3 px-1">
+								Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Explicabo molestias dolorum
+								iusto commodi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
+								minima?
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div>
+						<div class="bg-light pt-3 d-flex justify-content-between align-items-center" id="headingFour">
+							<h5 class="mb-0 py-2">
+								¿Lorem adipisicing elit. Totam, maiores.?
+							</h5>
+							<a class="collapsed activated" data-toggle="collapse" data-target="#collapseFour"
+								aria-expanded="false" aria-controls="collapseFour">
+							</a>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+							<div class="bg-light py-3 px-1">
+								Quam sit exercitationem saepe laudantium optio sed nihil qui enim vero praesentium?
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, et? Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Voluptatem, minima?
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="col col-md">
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="container-fluid bg-grey" id="contact">
+		<div class="row px-4 pt-4">
+			<div class="col-12 col-md-2">
+				<img class="logo-img d-block m-auto" src="img/logo-removebg.png" alt="">
+				<ul class="list-unstyled d-flex mb-0 justify-content-center">
+					<li class="p-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
+					<li class="p-2"><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+					<li class="p-2"><a href="#"><i class="bi bi-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-4"></div>
+			<div class="col-12 col-md-6 text-center text-md-left">
+				<ul class="nav flex-column text-center mb-2">
+					<li class="nav-link p-0">
+						<a class="nav-link" href="#"><i class="bi bi-envelope"></i> lorem-ipsus@correo.com</a>
+					</li>
+					<li class="nav-link p-0">
+						<a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> 555-555-55</a>
+					</li>
+					<li class="nav-link p-0">
+						<a class="nav-link" href="#"><i class="bi bi-whatsapp"></i> (+00) 111-111-1 </a>
+					</li>
+					<li class="nav-link p-0">
+						<a class="nav-link" href="#"><i class="bi bi-geo-alt-fill"></i> Av. New House N° 123-A - Ciudad,
+							País</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row pt-3 bg-dark">
+			<div class="col d-md-flex justify-content-around">
+				<p class="text-center text-white"> <small> My New Home © <span id="year"></span></small></p>
+				<p class="text-center text-white"><small> Derechos reservados | Privacidad | Developed by Chencho,
+						QA</small></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal: Forumulario -->
+	<div class="modal fade" id="project-modal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header border-warning">
+					<h5>Solicita presupuesto</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="form-budget">
+						<div class="form-row">
+							<div class="col">
+								<div class="form-group">
+									<label for="nombre">Nombre:</label>
+									<input class="form-control" type="text" id="nombre" name="nombre">
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<label for="apellido">Apellido:</label>
+									<input class="form-control" type="text" id="apellido" name="apellido">
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-12 col-lg-6">
+								<div class="form-group">
+									<label for="razonSocial">Razón social:</label>
+									<input class="form-control" type="text" id="razonSocial" name="razonSocial">
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input class="form-control" type="text" placeholder="correo@correo.com" id="email"
+										name="email">
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-12 col-lg-6">
+								<div class="form-group">
+									<label for="formSelectType">Tipo de propiedad:</label>
+									<select class="form-control" id="formSelectType">
+										<option>Casa</option>
+										<option>Apartamento</option>
+										<option>Oficina</option>
+										<option>Local comercial</option>
+										<option>Otro</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<label for="formCheckType">Tipo de remodelación:</label>
+								<div class="form-group ml-2">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" id="check-living"
+											value="living">
+										<label class="form-check-label" for="checkLiving">Sala</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" id="kitchen" value="kitchen">
+										<label class="form-check-label" for="check-bedroom">Cocina</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" id="check-bedroom"
+											value="check-bedroom">
+										<label class="form-check-label" for="check-bedroom">Dormitorio</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" id="check-bathroom"
+											value="check-bathroom">
+										<label class="form-check-label" for="check-bathroom">Sala de baño</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" id="check-garden"
+											value="check-bathroom">
+										<label class="form-check-label" for="check-garden">Jardín y exterior</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col">
+								<div class="form-group">
+									<p>Área a remodelar: <span id="valueInputRange"></span></p>
+									<input type="range" class="form-control-range mt-3 w-50" min="0" max="2000"
+										value="200" name="formControlRange" id="formControlRange">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer border-0">
+					<button type="submit" class="btn btn-warning" data-dismiss="modal" id="btn-send">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+		crossorigin="anonymous"></script>
+
+	<!-- Optional JavaScript -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
