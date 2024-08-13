@@ -35,7 +35,7 @@ const createNode = (id) => {
 	let arrayImages = [1, 2, 3, 4, 5];
 	arrayImages.forEach(e => {
 		const divElement = Object.assign(document.createElement("div"), { className: "card border-0 image-container"});
-		const elementImages = Object.assign(document.createElement("img"), { className: "card-img-top rounded image", src: `img/${id}/${id}-${e}.jpg`});
+		const elementImages = Object.assign(document.createElement("img"), { className: "card-img-top rounded image", src: `img/${id}/${id}-${e}.jpg`, alt: `${id}-${e}`});
 		const divText = Object.assign(document.createElement("div"), { className: "overlay", innerText: "Lorem ipsus sit edu"});
 		divElement.appendChild(elementImages);
 		divElement.appendChild(divText);
@@ -83,10 +83,6 @@ const loadBackground = () => {
 		navMenu.classList.remove('bg-grey');
 	}
 }
-
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip()
-});
 
 $('#project-modal').on('shown.bs.modal', function () {
     updateValueDisplay();
