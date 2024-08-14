@@ -1,12 +1,23 @@
 const containerColumn = (id) => {
 	return document.getElementById(`${id}`)
 }
+const attributeScroll = document.querySelectorAll('a[href^="#"]');
 const inputRange = document.querySelector("#formControlRange");
 const valueInputRange = document.querySelector("#valueInputRange");
 const formBudget = document.querySelector("#form-budget");
 const navIcon = document.querySelector("#navIcon");
 const burgerMenu = document.querySelector("#burgerMenu");
 const navMenu = document.querySelector("#menu");
+const ourWorksLinks = document.querySelectorAll("#service a");
+
+attributeScroll.forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 navIcon. addEventListener("click", (e) => {
 
@@ -18,15 +29,6 @@ navIcon. addEventListener("click", (e) => {
 	} else {
 		navIcon.classList.remove("bi-x-lg");
 		navIcon.classList.add("bi-list");
-	}
-});
-
-document.addEventListener("click", (e) => {
-	if(e.target.classList.contains("render-image")) {
-		const id = e.target.name;
-		if(containerColumn(id).children.length === 0) {
-			createNode(id);
-		}
 	}
 });
 
@@ -44,11 +46,13 @@ const createNode = (id) => {
 	containerColumn(id).appendChild(divColumnContainer);
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
-	const id = "living-room";
-	if(containerColumn(id).children.length === 0) {
-		createNode(id);
-	}
+document.addEventListener("DOMContentLoaded", () => {
+	ourWorksLinks.forEach((e) => {
+		let id = e.name;
+		if(containerColumn(id).children.length === 0) {
+			createNode(id);
+		}
+	})
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
