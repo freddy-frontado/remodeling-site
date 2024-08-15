@@ -19,7 +19,7 @@ attributeScroll.forEach(anchor => {
     });
 });
 
-navIcon. addEventListener("click", (e) => {
+navIcon.addEventListener("click", (e) => {
 
 	burgerMenu.classList.toggle("visibility");
 
